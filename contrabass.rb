@@ -11,7 +11,7 @@ class Contrabass < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/junhoyeo/contrabass/releases/download/v0.2.0/contrabass_0.2.0_darwin_amd64.tar.gz"
-      sha256 "31010a89b4a39c95419e9fbc8042f166adc7e4359b1e74dd791d397752221ead"
+      sha256 "c5545030181f78a3ec34902f213b9215e496a068136124d67fd0c71ee483a81b"
 
       define_method(:install) do
         bin.install "contrabass"
@@ -19,7 +19,7 @@ class Contrabass < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/junhoyeo/contrabass/releases/download/v0.2.0/contrabass_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0764ef43af7f002499c4ada93ec8d7d0d6aff6819151aa471d19e1eb336cf4af"
+      sha256 "16e98f0dca9ef281e3a42a816f746fe7d7a087a22d2776ab884acd3827a58551"
 
       define_method(:install) do
         bin.install "contrabass"
@@ -30,14 +30,14 @@ class Contrabass < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/junhoyeo/contrabass/releases/download/v0.2.0/contrabass_0.2.0_linux_amd64.tar.gz"
-      sha256 "9c65a514da4a057dfb74709ea4f8c4ebf7553c9249d08c59316c6fc323ba9eec"
+      sha256 "85c87c18e6d4a5e238ba64ae29e3b3db4d24ec12a9e011e361134128832526ba"
       define_method(:install) do
         bin.install "contrabass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/junhoyeo/contrabass/releases/download/v0.2.0/contrabass_0.2.0_linux_arm64.tar.gz"
-      sha256 "b8210017ea1d5e4475fa2a2302147ca6f996ee7c3570bae30ccb20db8c214be0"
+      sha256 "1743b259f3415fc5d7a1f96defdfc7d57c0bc1a927562028c53e88929fdccf97"
       define_method(:install) do
         bin.install "contrabass"
       end
