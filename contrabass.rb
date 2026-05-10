@@ -5,21 +5,21 @@
 class Contrabass < Formula
   desc "A project-level orchestrator for AI coding agents"
   homepage "https://github.com/junhoyeo/contrabass"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/junhoyeo/contrabass/releases/download/v0.3.0/contrabass_0.3.0_darwin_amd64.tar.gz"
-      sha256 "2867f8522595dfb54fac6eeae96ce5131dda3b3d677c31e5958deb33aad8ddb8"
+      url "https://github.com/junhoyeo/contrabass/releases/download/v0.4.0/contrabass_0.4.0_darwin_amd64.tar.gz"
+      sha256 "920beabbe0d8e8c1d80b80c0d1a2905502df2fa398b882a8c50a7ff36da2c78d"
 
       define_method(:install) do
         bin.install "contrabass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/junhoyeo/contrabass/releases/download/v0.3.0/contrabass_0.3.0_darwin_arm64.tar.gz"
-      sha256 "50f6ca3a8c14ce3119a0fd92a1e5a7abe787e731b2dc3509de361eff066432cb"
+      url "https://github.com/junhoyeo/contrabass/releases/download/v0.4.0/contrabass_0.4.0_darwin_arm64.tar.gz"
+      sha256 "8a6572fdb2dee9bc0061b2715cfc77fb2d8242eafa7f3892a03354821446b8c7"
 
       define_method(:install) do
         bin.install "contrabass"
@@ -29,15 +29,15 @@ class Contrabass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/junhoyeo/contrabass/releases/download/v0.3.0/contrabass_0.3.0_linux_amd64.tar.gz"
-      sha256 "1aec58126f67179bc1713a59704b34a5292308acba4f6d8a5b045c3a26c1427b"
+      url "https://github.com/junhoyeo/contrabass/releases/download/v0.4.0/contrabass_0.4.0_linux_amd64.tar.gz"
+      sha256 "58eb72e269a71dc6d7bfd65c52fa59a4309841e103b482821ef8676676cb3350"
       define_method(:install) do
         bin.install "contrabass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/junhoyeo/contrabass/releases/download/v0.3.0/contrabass_0.3.0_linux_arm64.tar.gz"
-      sha256 "044c672229477cdf3a76481e844ac901d38f9fb3dae2ec5d11b956e43f210d80"
+      url "https://github.com/junhoyeo/contrabass/releases/download/v0.4.0/contrabass_0.4.0_linux_arm64.tar.gz"
+      sha256 "d19a2df6a0297913643ae9c3e3cabbcf0d1361c1317be449ec6aae9974154411"
       define_method(:install) do
         bin.install "contrabass"
       end
